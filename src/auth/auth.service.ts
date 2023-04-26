@@ -15,4 +15,8 @@ export class AuthService {
 
     return result;
   }
+
+  async createAccount(email: string, password: string): Promise<any> {
+    await this.userService.addUser(email, password);
+  }
 }

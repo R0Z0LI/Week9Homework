@@ -10,4 +10,13 @@ export class AuthController {
   signIn(@Body() signInDto: Record<string, string>) {
     return this.authService.signIn(signInDto.email, signInDto.password);
   }
+
+  @HttpCode(HttpStatus.OK)
+  @Post('createAccount')
+  createAccount(@Body() createAccountDto: Record<string, string>) {
+    return this.authService.createAccount(
+      createAccountDto.email,
+      createAccountDto.password,
+    );
+  }
 }

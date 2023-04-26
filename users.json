@@ -13,5 +13,15 @@
     "userId": 3,
     "email": "bob@example.com",
     "password": "ghi789"
+  },
+  {
+    "userId": 4,
+    "email": "test1@example.com",
+    "password": "abc123"
+  },
+  {
+    "userId": 5,
+    "email": "test@example.com",
+    "password": "abc123"
   }
 ]
