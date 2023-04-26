@@ -10,9 +10,8 @@ export class AuthService {
     if (user?.password !== pass) {
       throw new UnauthorizedException();
     }
-
     const { password, ...result } = user;
-
+    console.log(`Find user ${user}`);
     return result;
   }
 

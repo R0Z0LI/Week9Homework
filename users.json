@@ -23,5 +23,10 @@
     "userId": 5,
     "email": "test@example.com",
     "password": "abc123"
+  },
+  {
+    "userId": 6,
+    "email": "test@test.com",
+    "password": "abc123"
   }
 ]
