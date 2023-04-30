@@ -1,4 +1,15 @@
-import { Controller, HttpCode, HttpStatus, Post, Body } from '@nestjs/common';
+import {
+  Controller,
+  HttpCode,
+  HttpStatus,
+  Post,
+  Body,
+  UseGuards,
+  Request,
+  Get,
+  Param,
+} from '@nestjs/common';
+import { UserAuthGuard } from './auth.guard';
 import { AuthService } from './auth.service';
 
 @Controller('auth')
@@ -18,5 +29,11 @@ export class AuthController {
       createAccountDto.email,
       createAccountDto.password,
     );
+  }
+  @UseGuards(UserAuthGuard)
+  @Get('characters/:pageId')
+  getProfile(@Param() pageId: any) {
+    console.log(pageId);
+    return this.authService.getProfiles();
   }
 }

@@ -17,7 +17,7 @@ export class UsersService {
   }
 
   async findOne(email: string): Promise<User | undefined> {
-    return this.users.find((user) => user.email === email);
+    return await this.users.find((user) => user.email === email);
   }
 
   async addUser(email: string, password: string): Promise<User | undefined> {

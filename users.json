@@ -28,5 +28,15 @@
     "userId": 6,
     "email": "test@test.com",
     "password": "abc123"
+  },
+  {
+    "userId": 7,
+    "email": "test@test.com",
+    "password": "abc123"
+  },
+  {
+    "userId": 8,
+    "email": "test@test.com",
+    "password": "abc123"
   }
 ]
