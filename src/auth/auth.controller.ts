@@ -32,8 +32,13 @@ export class AuthController {
   }
   @UseGuards(UserAuthGuard)
   @Get('characters/:pageId')
-  getProfile(@Param() pageId: any) {
-    console.log(pageId);
-    return this.authService.getProfiles();
+  getProfile(@Param() params: any) {
+    return this.authService.getProfiles(params.pageId);
+  }
+
+  @UseGuards(UserAuthGuard)
+  @Get('characters/details/:characterId')
+  getCharacterDetails(@Param() params: any) {
+    return this.authService.getCharacterDetails(params.characterId);
   }
 }

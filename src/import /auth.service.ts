@@ -21,18 +21,4 @@ export class AuthService {
   async createAccount(email: string, password: string) {
     await this.userService.addUser(email, password);
   }
-
-  async getProfiles(pageId: string) {
-    const res = await fetch(`https://swapi.dev/api/people/?page=${pageId}`);
-    const data = await res.json();
-    return data;
-  }
-
-  async getCharacterDetails(characterId: string) {
-    const res = await fetch(`https://swapi.dev/api/people/${characterId}`);
-
-    const person: Person = await res.json();
-    console.log(person);
-    return person;
-  }
 }

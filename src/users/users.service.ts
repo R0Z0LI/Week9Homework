@@ -30,6 +30,7 @@ export class UsersService {
       email: email,
       password: password,
     };
+
     this.users.push(user);
     this.writeUsers();
     return user;
