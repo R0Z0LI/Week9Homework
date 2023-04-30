@@ -31,12 +31,12 @@
   },
   {
     "userId": 7,
-    "email": "test@test.com",
-    "password": "abc123"
+    "email": "test100@test.com",
+    "password": "asdasdasd"
   },
   {
     "userId": 8,
-    "email": "test@test.com",
-    "password": "abc123"
+    "email": "test110@test.com",
+    "password": "asdasdasd"
   }
 ]

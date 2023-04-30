@@ -32,7 +32,6 @@ export class AuthService {
     const res = await fetch(`https://swapi.dev/api/people/${characterId}`);
 
     const person: Person = await res.json();
-    console.log(person);
     return person;
   }
 }
